@@ -55,11 +55,11 @@ Note the following topic names for your publishers and subscribers:
 - `AckermannDriveStamped`: /drive
 
 ## V: Deliverables and Submission
-You can implement this node in either C++ or Python. Follow the instructions at `AEB package creation <https://weber-agv.github.io/f1tenth_coursekit/tutorials/ModuleA/aeb/aeb_package.html>` 
+You can implement this node in either C++ or Python. Follow the instructions at [AEB package creation](https://weber-agv.github.io/f1tenth_coursekit/tutorials/ModuleA/aeb/aeb_package.html) 
 
 **Deliverable 1**: After you're finished, update the entire skeleton package directory with your `safety_node` package and directly commit and push to the repo Github classroom created for you. Your commited code should start and run in simulation smoothly, this includes building as a package with any dependencies included as part of the ``package.xml``
 
-**Deliverable 2**: Make a screen cast of running your safety node in the simulation. Drive the car with keyboard teleop along the hallways of Levine, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. Upload your video to YouTube (unlisted) and include a link to the video in canvas.
+**Deliverable 2**: Make a screen cast of running your safety node in the simulation. Drive the car with keyboard teleop along the hallways of Levine, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. Upload your video to YouTube (unlisted) and include a link to the video in Canvas.
 
 ## VI: Grading Rubric
 - Compilation: **30** Points

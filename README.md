@@ -48,8 +48,6 @@ After your calculations, you should end up with an array of iTTCs that correspon
 
 For this lab, you will make a Safety Node that should halt the car before it collides with obstacles. To do this, you will make a ROS 2 node that subscribes to the `LaserScan` and `Odometry` messages. It should analyze the `LaserScan` data and, if necessary, publish an `AckermannDriveStamped` with the `speed` field set to 0.0 m/s to brake. After you've calculated the array of iTTCs, you should decide how to proceed with this information. You'll have to decide how to threshold, and how to best remove false positives (braking when collision isn't imminent). Don't forget to deal with `inf`s or `nan`s in your arrays.
 
-To test your node, you can launch the sim container with `kb_teleop` set to `True` in `sim.yaml`. Then in another `bash` session inside the sim container, launch the `teleop_twist_keyboard` node from `teleop_twist_keyboard` package for keyboard teleop. It should already be installed as a dependency of the simulator. After running the simulation, the keyboard teleop, and your safety node, use the reset tool for the simulation and drive the vehicle towards a wall.
-
 Note the following topic names for your publishers and subscribers:
 
 - `LaserScan`: /scan
@@ -57,15 +55,16 @@ Note the following topic names for your publishers and subscribers:
 - `AckermannDriveStamped`: /drive
 
 ## V: Deliverables and Submission
-You can implement this node in either C++ or Python. A skeleton package is already provided in the repo that you can use. 
+You can implement this node in either C++ or Python. Follow the instructions at `AEB package creation <https://weber-agv.github.io/f1tenth_coursekit/tutorials/ModuleA/aeb/aeb_package.html>` 
 
 **Deliverable 1**: After you're finished, update the entire skeleton package directory with your `safety_node` package and directly commit and push to the repo Github classroom created for you. Your commited code should start and run in simulation smoothly, this includes building as a package with any dependencies included as part of the ``package.xml``
 
-**Deliverable 2**: Make a screen cast of running your safety node in the simulation. Drive the car with keyboard teleop along the hallways of Levine, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. Upload your video to YouTube (unlisted) and include a link to the video in **`SUBMISSION.md`**.
+**Deliverable 2**: Make a screen cast of running your safety node in the simulation. Drive the car with keyboard teleop along the hallways of Levine, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. Upload your video to YouTube (unlisted) and include a link to the video in canvas.
 
 ## VI: Grading Rubric
 - Compilation: **30** Points
 - Provided Video: **20** Points
 - Correctly stops before collision: **30** Points
 - Correctly calculates TTC: **10** Points
+
 - Able to navigate through the hallway: **10** Points

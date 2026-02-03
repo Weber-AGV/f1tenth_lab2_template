@@ -59,7 +59,7 @@ You can implement this node in either C++ or Python. Follow the instructions at 
 
 **Deliverable 1**: After you're finished, update the entire skeleton package directory with your `safety_node` package. Upload the node file or files that you created. 
 
-**Deliverable 2**: Make a screen cast of running your safety node. Drive the car with keyboard teleop along the hallways of Levine, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. Upload your video to YouTube (unlisted) and include a link to the video in Canvas.
+**Deliverable 2**: Make a screen cast of running your safety node. Drive the car forward along the hallway, showing it doesn't brake when travelling straight in the hallway. You need to show that your safe node doesn't generate false positives. i.e. The car doesn't suddenly stop while travelling down the hallway. Then show the car driving towards a wall and braking correctly. Upload your video to YouTube (unlisted) and include a link to the video in Canvas.
 
 ## VI: Grading Rubric
 - Compilation: **30** Points
